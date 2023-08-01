@@ -1,0 +1,21 @@
+[
+    {
+        "id": "ea17a701be3e9519",
+        "type": "function",
+        "z": "99e88937bac14f45",
+        "name": "function 1",
+        "func": "// Lo que está después de \"//\" son comentarios \n// Crea un objeto Date a partir del msg.payload enviado por timestamp\n var date = new Date(msg.payload);\n// Cambia el payload para que sea una fecha con formato\nmsg.payload = date.toString();\n// Regresa el mensaje para que se envíe al siguiente nodo return msg;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 100,
+        "wires": [
+            [
+                "423c1d9e8de235cc"
+            ]
+        ]
+    }
+]
